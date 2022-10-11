@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = 6661;
+const port = 8083;
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./docs/swagger.json');
 app.use(express.json());
@@ -82,7 +82,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // listen to a specific port
 server = app.listen(port, () => {
-    console.log(`API up at: http://localhost:${port}`)
+    console.log(`API up at: https//ilvestlily.me/${port}/`)
 });
 
 // websocket io

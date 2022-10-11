@@ -80,7 +80,7 @@
                     </div>
                     <div class="modal-footer">
                         <button id="adminButton" type="button" @click="getCells()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cellModel">Assign Cell</button>
-                        <button id="adminButton" type="button" @click="edit()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModel">Edit Criminal</button>
+                        <button id="adminButton" type="button" @click="edit()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editModel">Edit movie</button>
                         <button id="adminButton" type="button" @click="deletemovie()" class="btn btn-primary">Delete movie</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <p id="detCrimId">1</p>
@@ -106,17 +106,9 @@
                                 <small id="nameHelp" class="form-text text-muted">The name of the movie</small>
                             </div>
                             <div class="form-group">
-                                <label for="">Crime</label>
+                                <label for="">description</label>
                                 <input type="crime" class="form-control" id="crimeUpdInput" aria-describedby="crimeHelp" placeholder="Enter crime">
-                                <small id="crimeHelp" class="form-text text-muted">The crime he has commited</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Date of Birth</label>
-                                <input type="dob" class="form-control" id="dobUpdInput" aria-describedby="dobHelp" placeholder="Enter dob">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Description</label>
-                                <input type="description" class="form-control" id="descriptionUpdInput" aria-describedby="descriptionHelp" placeholder="Describe the movie">
+                                <small id="crimeHelp" class="form-text text-muted">The movie description</small>
                             </div>
                         </form>
                     </div>
